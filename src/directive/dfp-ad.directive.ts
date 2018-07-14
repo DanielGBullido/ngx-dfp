@@ -125,9 +125,9 @@ export class DfpAdDirective implements OnInit, AfterViewInit, OnDestroy {
       this.slot.setForceSafeFrame(true);
     }
 
-    if (this.personalizedAds === true) {
-      this.slot.set('requestNonPersonalizedAds', 0);
-      googletag.pubads().setRequestNonPersonalizedAds(0);
+    if (this.personalizedAds === false) {
+      this.slot.set('requestNonPersonalizedAds', 1);
+      googletag.pubads().setRequestNonPersonalizedAds(1);
     }
 
     if (ad.clickUrl) {
