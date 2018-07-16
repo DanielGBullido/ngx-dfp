@@ -126,7 +126,7 @@ export class DfpRefreshService {
   }
 
   hiddenCheck(element: Element) {
-    if (typeof (window) !== 'undefined') {
+    if (typeof (window) !== 'undefined' && element != null) {
       const css = window.getComputedStyle(element);
       if (css.display === 'none') {
         return true;
