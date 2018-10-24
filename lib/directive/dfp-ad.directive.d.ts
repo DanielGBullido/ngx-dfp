@@ -1,6 +1,8 @@
 import { ElementRef, EventEmitter, OnInit, AfterViewInit, OnDestroy } from '@angular/core';
 import { Router } from '@angular/router';
-import { DfpService, DfpIDGeneratorService, DfpRefreshService } from '../service';
+import { DfpService } from '../service/dfp.service';
+import { DfpIDGeneratorService } from '../service/dfp-id-generator.service';
+import { DfpRefreshService } from '../service/dfp-refresh.service';
 import { DfpConfig } from '../class';
 export declare class DfpRefreshEvent {
     type: string;

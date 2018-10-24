@@ -1,6 +1,6 @@
 import { ElementRef } from '@angular/core';
 import { DfpAdDirective } from './dfp-ad.directive';
-import { DfpRefreshService } from '../service';
+import { DfpRefreshService } from '../service/dfp-refresh.service';
 export declare class DfpAdResponsiveDirective {
     private elementRef;
     private ad;
