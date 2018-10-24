@@ -1,56 +1,42 @@
 {
-  "name": "ngx-dfp",
-  "version": "1.3.2",
-  "description": "Semantic DoubleClick for Publishers (DFP by Google) integration with Angular v4.0",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/atwwei/ngx-dfp.git"
-  },
-  "keywords": [
-    "angular",
-    "doubleclick",
-    "google",
-    "ads",
-    "dfp"
-  ],
+  "name": "ngx-dfp-demo",
+  "version": "0.0.0",
+  "description": "Demo for ngx-dfp test",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/atwwei/ngx-dfp/issues"
-  },
-  "homepage": "https://github.com/atwwei/ngx-dfp#readme",
-  "files": [
-    "lib/*",
-    "README.md",
-    "LICENSE"
-  ],
-  "main": "lib/index.js",
-  "typings": "lib/index.d.ts",
   "scripts": {
-    "lint": "tslint --project tsconfig.json",
-    "build": "ng lint && ngc && gulp",
-    "prepublishOnly": "yarn build"
+    "ng": "ng",
+    "start": "ng serve",
+    "test": "ng test",
+    "lint": "ng lint",
+    "e2e": "ng e2e",
+    "build": "ng build",
+    "build:lib": "ng build ngx-dfp --prod",
+    "bundle-report": "ng build --prod --stats-json && webpack-bundle-analyzer dist/stats.json"
   },
   "dependencies": {
-    "@alugha/ima": "^1.1.2"
-  },
-  "devDependencies": {
-    "@angular-devkit/build-angular": "^0.6.0",
-    "@angular/cli": "^6.0.0",
+    "@alugha/ima": "^1.1.2",
     "@angular/common": "^6.0.0",
-    "@angular/compiler": "^6.0.0",
-    "@angular/compiler-cli": "^6.0.0",
     "@angular/core": "^6.0.0",
+    "@angular/http": "^6.0.0",
     "@angular/platform-browser": "^6.0.0",
     "@angular/platform-browser-dynamic": "^6.0.0",
     "@angular/router": "^6.0.0",
-    "codelyzer": "^4.0.0",
-    "gulp": "^3.9.1",
-    "gulp-prune": "^0.2.0",
+    "core-js": "^2.5.4",
     "rxjs": "^6.0.0",
-    "rxjs-compat": "^6.0.0",
+    "video.js": "^7.0.3",
+    "zone.js": "~0.8.26"
+  },
+  "devDependencies": {
+    "@angular-devkit/build-angular": "~0.7.0",
+    "@angular-devkit/build-ng-packagr": "^0.7.3",
+    "@angular/cli": "~6.1.2",
+    "@angular/compiler": "^6.0.0",
+    "@angular/compiler-cli": "^6.0.0",
+    "@angular/language-service": "^6.0.0",
+    "codelyzer": "~4.2.1",
+    "ng-packagr": "^4.1.0",
     "tslint": "~5.9.1",
     "typescript": "~2.7.2",
-    "video.js": "^7.0.3",
-    "zone.js": "^0.8.17"
+    "webpack-bundle-analyzer": "^2.13.1"
   }
 }

@@ -9,9 +9,12 @@ import { Router, NavigationEnd } from '@angular/router';
 import { Subscription } from 'rxjs';
 import { filter } from 'rxjs/operators';
 
-import { DfpService, DfpIDGeneratorService, DfpRefreshService } from '../service';
+import { DfpService, } from '../service/dfp.service';
+import { DfpIDGeneratorService, } from '../service/dfp-id-generator.service';
+import { DfpRefreshService } from '../service/dfp-refresh.service';
 
-import { DFPIncompleteError, GoogleSlot, DfpConfig, DFP_CONFIG } from '../class';
+import { DFPIncompleteError, GoogleSlot, DfpConfig } from '../class';
+import { DFP_CONFIG } from '../service/injection_token';
 
 declare var googletag;
 
@@ -121,8 +124,8 @@ export class DfpAdDirective implements OnInit, AfterViewInit, OnDestroy {
 
     this.slot = googletag.defineSlot(ad.adUnit, ad.sizes, element.id);
 
-    if (ad.forceSafeFrame !== undefined) {
-      this.slot.setForceSafeFrame(true);
+    if (this.forceSafeFrame !== undefined && ad.forceSafeFrame === !this.config.forceSafeFrame) {
+      this.slot.setForceSafeFrame(ad.forceSafeFrame);
     }
 
     if (this.personalizedAds === false) {

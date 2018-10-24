@@ -1,11 +1,10 @@
 import { Injectable, EventEmitter, Optional, Injector, Inject } from '@angular/core';
 import { DOCUMENT } from '@angular/common';
 
-import { Subscription } from 'rxjs';
-import { timer } from 'rxjs/observable/timer';
-import { from } from 'rxjs/observable/from';
+import { Subscription, timer, from } from 'rxjs';
 
-import { DfpConfig, DFP_CONFIG } from '../class';
+import { DfpConfig } from '../class';
+import { DFP_CONFIG } from './injection_token';
 import { ParseDurationService } from './parse-duration.service';
 
 class DFPRefreshError extends Error { }
