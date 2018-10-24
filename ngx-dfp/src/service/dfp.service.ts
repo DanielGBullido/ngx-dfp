@@ -1,7 +1,8 @@
 import { Injectable, Optional, PLATFORM_ID, Inject } from '@angular/core';
 import { isPlatformBrowser } from '@angular/common';
 
-import { DfpConfig, DFP_CONFIG } from '../class';
+import { DFP_CONFIG } from './injection_token';
+import { DfpConfig } from '../class';
 import { IdleService } from './idle.service';
 import { ScriptInjectorService } from './script-injector.service';
 
