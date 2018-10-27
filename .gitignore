@@ -3,8 +3,7 @@
 # compiled output
 /dist
 /src
-.editorconfig
-.gitignore
+*.editorconfig
 /ngx-dfp
 angular.json
 package-lock.json
