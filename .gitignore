@@ -5,6 +5,7 @@
 /src
 .editorconfig
 .gitignore
+/ngx-dfp
 angular.json
 package-lock.json
 package.json
