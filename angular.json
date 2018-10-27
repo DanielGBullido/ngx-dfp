@@ -79,7 +79,7 @@
     "ngx-dfp": {
       "root": "",
       "sourceRoot": "ngx-dfp",
-      "projectType": "library",
+      "projectType": "application",
       "prefix": "",
       "architect": {
         "build": {

@@ -2,6 +2,16 @@
 
 # compiled output
 /dist
+/src
+.editorconfig
+.gitignore
+angular.json
+package-lock.json
+package.json
+README.md
+tsconfig.json
+tslint.json
+yarn.lock
 
 # ngc
 *.ngsummary.json
