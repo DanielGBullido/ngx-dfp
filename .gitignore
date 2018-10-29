@@ -2,14 +2,7 @@
 
 # compiled output
 /dist
-/src
 *.editorconfig
-/ngx-dfp
-angular.json
-package-lock.json
-README.md
-tsconfig.json
-tslint.json
 yarn.lock
 
 # ngc
