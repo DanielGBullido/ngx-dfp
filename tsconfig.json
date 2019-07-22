@@ -23,6 +23,12 @@
       ],
       "ngx-dfp/*": [
         "./lib/*"
+      ],
+      "example": [
+        "dist/example"
+      ],
+      "example/*": [
+        "dist/example/*"
       ]
     }
   }

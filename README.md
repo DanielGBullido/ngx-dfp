@@ -53,3 +53,6 @@ DfpModule.forRoot({
 
 - Source of demo page: [Demo Source](https://github.com/atwwei/ngx-dfp/tree/master/demo)
 - Demo page for ngx-dfp available here: [Demo Page](https://atwwei.github.io/ngx-dfp/demo)
+
+## GENERATE LIB
+ng build my-lib
