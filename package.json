@@ -36,8 +36,8 @@
     "ng-packagr": "^5.4.0",
     "tsickle": "^0.37.0",
     "tslib": "^1.10.0",
+    "typescript": "3.5.3",
     "tslint": "~5.9.1",
-    "typescript": "^3.6.0-beta",
     "webpack-bundle-analyzer": "^3.4.1"
   }
 }
