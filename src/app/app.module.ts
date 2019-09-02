@@ -22,11 +22,11 @@ import { AppComponent } from './app.component';
         children: [
           {
             path: '',
-            loadChildren: './page/page.module#PageModule'
+            loadChildren: () => import('./page/page.module').then(m => m.PageModule)
           },
           {
             path: ':page',
-            loadChildren: './page2/page2.module#Page2Module'
+            loadChildren: () => import('./page2/page2.module').then(m => m.Page2Module)
           },
         ]
       }
