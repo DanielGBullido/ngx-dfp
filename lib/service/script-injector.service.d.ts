@@ -6,5 +6,5 @@ export declare class ScriptInjectorService {
     private createScript;
     private promiseScript;
     injectScript(script: any): void;
-    scriptInjector(url: any): Promise<{}>;
+    scriptInjector(url: any): Promise<unknown>;
 }
