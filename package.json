@@ -15,13 +15,13 @@
   },
   "dependencies": {
     "@alugha/ima": "^1.1.2",
-    "@angular/common": "^8.2.4",
     "@angular/core": "^8.2.4",
+    "@angular/common": "^8.2.4",
+    "@angular/router": "^8.2.4",
+    "rxjs": "^6.3.3",
     "@angular/platform-browser": "^8.2.4",
     "@angular/platform-browser-dynamic": "^8.2.4",
-    "@angular/router": "^8.2.4",
     "core-js": "^2.6.2",
-    "rxjs": "^6.3.3",
     "video.js": "^7.4.1",
     "zone.js": "~0.9.1"
   },
